@@ -1,0 +1,14 @@
+!python run_pretraining.py \
+    --input_file=gs://ekonbert-biz/pretrain_tfrecords/*.tfrecord \
+    --output_dir=gs://ekonbert-biz/models/ \
+    --do_train=True \
+    --do_eval=True \
+    --bert_config_file=config/base_config.json \
+    --train_batch_size=32 \
+    --max_seq_length=512 \
+    --max_predictions_per_seq=20 \
+    --num_train_steps=20 \
+    --num_warmup_steps=10 \
+    --learning_rate=2e-5 \
+    --use_tpu=True \
+    --tpu_name=ekonbert-vm
