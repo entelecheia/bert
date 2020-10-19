@@ -1,4 +1,4 @@
-!python3 run_pretraining.py \
+python3 run_pretraining.py \
     --input_file=gs://ekonbert-biz/pretrain_tfrecords/*.tfrecord \
     --output_dir=gs://ekonbert-biz/models/ \
     --do_train=True \
