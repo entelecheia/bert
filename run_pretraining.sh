@@ -9,7 +9,7 @@ python3 run_pretraining.py \
     --max_predictions_per_seq=20 \
     --num_train_steps=2000000 \
     --num_warmup_steps=10000 \
-    --save_checkpoints_steps=5000 \
+    --save_checkpoints_steps=50000 \
     --keep_checkpoint_max=30 \
     --learning_rate=2e-4 \
     --use_tpu=True \
