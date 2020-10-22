@@ -4,7 +4,7 @@ python3 run_pretraining.py \
     --do_train=True \
     --do_eval=True \
     --bert_config_file=config/base_config.json \
-    --train_batch_size=256 \
+    --train_batch_size=128 \
     --max_seq_length=512 \
     --max_predictions_per_seq=20 \
     --num_train_steps=2000000 \
