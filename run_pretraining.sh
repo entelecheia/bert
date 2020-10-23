@@ -1,5 +1,5 @@
 python3 run_pretraining.py \
-    --input_file=gs://ekonbert-biz/pretrain_tfrecords/*.tfrecord \
+    --input_file=gs://ekonbert-biz/pretrain_tfrecords_2/*.tfrecord \
     --output_dir=gs://ekonbert-biz/models/ \
     --do_train=True \
     --do_eval=True \
@@ -9,7 +9,7 @@ python3 run_pretraining.py \
     --max_predictions_per_seq=20 \
     --num_train_steps=2000000 \
     --num_warmup_steps=10000 \
-    --save_checkpoints_steps=50000 \
+    --save_checkpoints_steps=25000 \
     --keep_checkpoint_max=30 \
     --learning_rate=3e-5 \
     --use_tpu=True \
