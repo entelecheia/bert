@@ -1,5 +1,5 @@
 python3 run_pretraining.py \
-    --input_file=gs://ekonbert-biz/pretrain_tfrecords_2/*.tfrecord \
+    --input_file=gs://ekonbert-biz/pretrain_tfrecords/*.tfrecord \
     --output_dir=gs://ekonbert-biz/models/ \
     --do_train=True \
     --do_eval=True \
